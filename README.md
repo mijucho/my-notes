@@ -2,7 +2,20 @@
 my notes
 
 ## Week 1 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 
+How to reverse arrays
+
+```
+const a = [1, 2, 3];
+
+console.log(a); // [1, 2, 3]
+
+a.reverse();
+
+console.log(a); // [3, 2, 1]
+
+```
 
 --------
 
