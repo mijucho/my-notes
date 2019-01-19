@@ -33,3 +33,16 @@ server.get('/locations/:id', (req, res) => {
   
 })
 ```
+--------- or 
+```
+
+server.get('/person/:id', (req, res) => {
+  var person = people.find(person => person.id == req.params.id)
+  if(!person) {
+    res.send('not found')
+} else {
+  res.render('person', person)
+}
+
+})
+```
