@@ -46,3 +46,55 @@ server.get('/person/:id', (req, res) => {
 
 })
 ```
+---------------
+## week4 React
+------ Intro code----
+index.js
+```
+const React =require('react')
+const ReactDOM = require('react-dom')
+const Dog = require('./components/Dog')
+
+const data = {
+  name: 'miju',
+  show: true,
+  pets:['sam', 'tim']
+}
+
+function helloTemplate (props){
+  return (
+    <div className='hello' width='200'>
+    {props.pets.map((name, i) => <div key={i}> <Dog name={name}/></div>)}
+      {props.show ? <Dog name='sam' color='pink' />: ''}
+    <div>hello {props.name}</div> 
+    </div> 
+ 
+  )
+}
+
+const view = helloTemplate(data)
+
+const placeToMount = document.getElementById('root')
+
+ReactDOM.render(view, placeToMount)
+
+```
+Dog.jsx
+```
+import React from 'react'
+
+function Dog(props) {
+    console.log(props)
+    return <div>
+        woof woof woof - I am {props.name} !!!!
+        </div>
+}
+
+module.exports = Dog
+```
+Result-------------------------
+woof woof woof - I am sam !!!!
+woof woof woof - I am tim !!!!
+woof woof woof - I am sam !!!!
+hello miju
+--------------------------
