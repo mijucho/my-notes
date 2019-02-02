@@ -49,6 +49,7 @@ server.get('/person/:id', (req, res) => {
 ---------------
 ## week4 React
 ------ Intro code----
+
 index.js
 ```
 const React =require('react')
@@ -92,9 +93,9 @@ function Dog(props) {
 
 module.exports = Dog
 ```
-Result-------------------------
-woof woof woof - I am sam !!!!
-woof woof woof - I am tim !!!!
-woof woof woof - I am sam !!!!
-hello miju
---------------------------
+Result---
+1,woof woof woof - I am sam !!!!
+2,woof woof woof - I am tim !!!!
+3,woof woof woof - I am sam !!!!
+4,hello miju
+---
