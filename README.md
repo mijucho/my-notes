@@ -155,3 +155,19 @@ result---
  result changed ---
 - Hi Anmals!!
 - Toggle
+----
+proper Toggle Function
+```
+ return (
+    < div>
+      <h1>{title}!!</h1>
+      <button onClick={() => this.setState({showMonkeys: !showMonkeys})}>Toggle</button>
+      {showMonkeys ? <Monkeys names ={monkey} /> : ''} 
+    </div>
+  )
+}
+}
+
+export default App
+```
+-----
