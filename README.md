@@ -171,3 +171,22 @@ proper Toggle Function
 export default App
 ```
 -----
+Toggle evnt with clean code
+```
+render() {
+  const {title, showMonkeys} = this.state
+  const toggle = () => this.setState({showMonkeys: !showMonkeys})
+
+ return (
+    < div>
+      <h1>{title}!!</h1>
+      <button onClick={toggle}>Toggle</button>
+      {showMonkeys ? <Monkeys names ={monkey} /> : ''} 
+    </div>
+  )
+}
+}
+
+export default App
+```
+----
