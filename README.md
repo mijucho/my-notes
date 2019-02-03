@@ -152,6 +152,6 @@ result---
 - Sam
 - Tim
 - Bob
-changed ---
+ result changed ---
 - Hi Anmals!!
 - Toggle
