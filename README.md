@@ -63,9 +63,7 @@ const App = () => {
     </div>
   )
 }
-
 export default App
-
 ```
 Monkeys.jsx
 ```
@@ -87,7 +85,6 @@ Result---
 - sam
 - tim
 - bob
----
 ------
 Converting a Function to a Class & state
 ```
@@ -155,6 +152,6 @@ result---
 - Sam
 - Tim
 - Bob
----changed ---
+changed ---
 - Hi Anmals!!
 - Toggle
