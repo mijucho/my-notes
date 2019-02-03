@@ -119,9 +119,8 @@ render() {
 export default App
 ```
 result
-----
-Zoo!!
-----
+- Zoo!!
+------
 onClick evnt
 ```
 import React from 'react'
@@ -153,11 +152,11 @@ render() {
 export default App
 ```
 result---
--Hi Anmals!!
--Toggle
--Sam
--Tim
--Bob
+- Hi Anmals!!
+- Toggle
+- Sam
+- Tim
+- Bob
 changed ---
-Hi Anmals!!
-Toggle
+- Hi Anmals!!
+- Toggle
