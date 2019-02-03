@@ -50,7 +50,7 @@ server.get('/person/:id', (req, res) => {
 ## week4 React
 ------ Intro code----
 
-index.js
+App.jsx
 ```
 const React =require('react')
 const ReactDOM = require('react-dom')
