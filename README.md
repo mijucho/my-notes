@@ -46,10 +46,8 @@ server.get('/person/:id', (req, res) => {
 
 })
 ```
----------------
 ## week4 React
 ------ Intro code----
-
 App.jsx
 ```
 import React from 'react'
@@ -157,6 +155,6 @@ result---
 - Sam
 - Tim
 - Bob
-changed ---
+---changed ---
 - Hi Anmals!!
 - Toggle
