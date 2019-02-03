@@ -92,7 +92,6 @@ Result---
 ---
 ------
 Converting a Function to a Class & state
---------
 ```
 import React from 'react'
 import Monkeys from './Monkeys'
