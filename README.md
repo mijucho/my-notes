@@ -190,3 +190,24 @@ render() {
 export default App
 ```
 ----
+Advance JS with bind(this)
+```
+render() {
+  const {title, showMonkeys} = this.state
+  let toggle = function() {
+    this.setState({showMonkeys: !showMonkeys})
+  } 
+    toggle =toggle.bind(this)  
+
+ return (
+    < div>
+      <h1>{title}!!</h1>
+      <button onClick={toggle}>Toggle</button>
+      {showMonkeys ? <Monkeys names ={monkey} /> : ''} 
+    </div>
+  )
+}
+}
+
+export default App
+```
