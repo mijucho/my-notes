@@ -208,6 +208,43 @@ render() {
   )
 }
 }
+-------
+evt.preventDefault()
+```
+import React from 'react'
+import Monkeys from './Monkeys'
+
+const monkey = ['Sam','Tim', 'Bob']
+
+function clickLink(evt) {
+  console.log('clicked')
+  evt.preventDefault()
+}
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state ={
+      showMonkeys:true,
+      title:'Hi Anmals'
+  }
+}
+toggle (evt) {
+  this.setState({showMonkeys: !this.state.showMonkeys})
+}
+render() {
+  const {title, showMonkeys} = this.state
+ return (
+    < div>
+      <h1>{title}!!</h1>
+      <a href='/404' onClick={clickLink}>Freedom</a>
+       <button onClick={this.toggle.bind(this)}>Toggle</button>
+      {showMonkeys ? <Monkeys names ={monkey} /> : ''} 
+    </div>
+  )
+}
+}
 
 export default App
 ```
+
