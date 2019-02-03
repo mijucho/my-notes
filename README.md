@@ -90,3 +90,35 @@ Result---
 - tim
 - bob
 ---
+------
+Converting a Function to a Class & state
+--------
+```
+import React from 'react'
+import Monkeys from './Monkeys'
+
+const monkey = ['Sam','Tim', 'Bob']
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state ={
+      showMonkeys:false
+      
+  }
+}
+render() {
+ return (
+    < div>
+      <h1>Zoo!!</h1>
+   {this.state.showMonkeys ? <Monkeys names ={monkey} /> : ''} 
+    </div>
+  )
+}
+}
+
+export default App
+```
+result
+----
+Zoo!!
