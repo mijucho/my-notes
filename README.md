@@ -52,50 +52,41 @@ server.get('/person/:id', (req, res) => {
 
 App.jsx
 ```
-const React =require('react')
-const ReactDOM = require('react-dom')
-const Dog = require('./components/Dog')
+import React from 'react'
+import Monkeys from './Monkeys'
 
-const data = {
-  name: 'miju',
-  show: true,
-  pets:['sam', 'tim']
-}
-
-function helloTemplate (props){
+const monkeys = ['sam','tim','bob']
+const App = () => {
   return (
-    <div className='hello' width='200'>
-    {props.pets.map((name, i) => <div key={i}> <Dog name={name}/></div>)}
-      {props.show ? <Dog name='sam' color='pink' />: ''}
-    <div>hello {props.name}</div> 
-    </div> 
- 
+    <
+    div>
+      <h1>Zoo!!</h1>
+      <Monkeys names ={monkeys} />
+    </div>
   )
 }
 
-const view = helloTemplate(data)
-
-const placeToMount = document.getElementById('root')
-
-ReactDOM.render(view, placeToMount)
+export default App
 
 ```
-Dog.jsx
+Monkeys.jsx
 ```
-import React from 'react'
+import React from 'react';
 
-function Dog(props) {
-    console.log(props)
+function Monkeys({names}) {
+
     return <div>
-        woof woof woof - I am {props.name} !!!!
-        </div>
+        <ul>
+        {names.map((monkey,i) => <li key ={i}>{monkey}</li>)}
+        </ul>
+    </div>
 }
 
-module.exports = Dog
+export default Monkeys
 ```
 Result---
-1,woof woof woof - I am sam !!!!
-2,woof woof woof - I am tim !!!!
-3,woof woof woof - I am sam !!!!
-4,hello miju
+- Zoo!!
+- sam
+- tim
+- bob
 ---
