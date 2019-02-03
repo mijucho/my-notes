@@ -208,6 +208,8 @@ render() {
   )
 }
 }
+export default App
+```
 -------
 evt.preventDefault()
 ```
