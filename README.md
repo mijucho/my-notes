@@ -121,3 +121,43 @@ export default App
 result
 ----
 Zoo!!
+----
+onClick evnt
+```
+import React from 'react'
+import Monkeys from './Monkeys'
+
+const monkey = ['Sam','Tim', 'Bob']
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state ={
+      showMonkeys:false,
+      title:'Hi Anmals'
+  }
+}
+render() {
+  const {title, showMonkeys} = this.state
+
+ return (
+    < div>
+      <h1>{title}!!</h1>
+      <button onClick={() => this.setState({showMonkeys:true})}>Toggle</button>
+      {showMonkeys ? <Monkeys names ={monkey} /> : ''} 
+    </div>
+  )
+}
+}
+
+export default App
+```
+result---
+-Hi Anmals!!
+-Toggle
+-Sam
+-Tim
+-Bob
+changed ---
+Hi Anmals!!
+Toggle
