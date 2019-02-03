@@ -190,7 +190,7 @@ render() {
 export default App
 ```
 ----
-Advance JS with bind(this)
+Advance JS with function out of context need 'bind(this)'
 ```
 render() {
   const {title, showMonkeys} = this.state
